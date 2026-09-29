@@ -1,0 +1,158 @@
+---
+title: "Article Notes: The Two-Step Approach to Structural Equation Modeling"
+author: "Nik Sahami"
+date: today
+format:
+  html:
+    toc: true
+    number-sections: true
+    embed-resources: true
+---
+
+# Introduction
+
+Structural Equation Modeling (SEM) is used to test theories about constructs and how they relate to each other
+
+- useful for theory testing and development
+- model-building can be separated into 2 parts:
+  1. measurement model - how observed measures relate to underlying constructs
+  2. structural model - how the constructs relate to each other
+- both parts can technically be estimated at the same time
+  - authors argue the measurement model should be evaluated first
+  - then the measurement and structural models can be evaluated together
+- separating them helps researchers:
+  - better assess construct validity
+  - understand where poor model fit is coming from
+  - avoid misleading interpretations
+- measurement model helps assess:
+  - convergent validity
+  - discriminant validity
+- structural model helps assess nomological validity once acceptable measurement has been established
+
+# Background
+
+## Exploratory Versus Confirmatory Analyses
+
+Exploratory and confirmatory analysis are not completely separate and are better thought of as a progression
+
+- exploratory factor analysis:
+  - no required specification of the number of factors beforehand
+- researchers can move toward confirmation by:
+  - specifying the expected number of factors
+  - testing how well the resulting model fits the data
+- confirmatory factor analysis:
+  - measurement model is specified beforehand
+  - parameter values are still estimated from the data
+- authors say "restricted analysis" may sometimes be a better description than purely confirmatory analysis
+  - many parameters are restricted beforehand, usually to zero
+- initial measurement models often do not fit well
+  - researchers usually respecify and reestimate them using the same data
+  - because of this, the process is rarely completely confirmatory
+- strongest confirmation comes from cross-validating the final model using another sample
+
+## Complementary Approaches for Theory Testing Versus Predictive Application
+
+SEM methods can be chosen depending on whether the goal is theory testing or prediction
+
+- Maximum Likelihood (ML) and Generalized Least Squares (GLS):
+  - more useful for theory testing and development
+  - based on the common factor model
+  - separate random error and measure-specific variance from the latent construct
+  - focus on explaining covariance between observed variables
+  - provide:
+    - efficient parameter estimates
+    - overall model-fit testing
+- one drawback:
+  - factor scores are not defined exactly
+  - not a major issue for theory testing
+  - can reduce predictive accuracy
+
+Partial Least Squares (PLS) is more useful for prediction and application
+
+- treats all observed variance as useful variance
+- focuses on maximizing explained variance
+- produces exact component scores
+  - useful for predicting individuals' standings
+- limitations:
+  - does not directly assess unidimensionality
+  - does not provide an overall model-fit test
+  - parameter estimates are less efficient than full-information methods
+  - relationships among latent variables may be underestimated
+
+Authors view ML/GLS and PLS as complementary
+
+- ML or GLS = theory testing and development
+- PLS = prediction and application
+- rest of article focuses on ML/GLS for confirmatory theory testing
+
+## Estimation Methods
+
+Maximum Likelihood (ML) was the main estimation method used in SEM at the time
+
+- under multivariate normality and large samples, ML estimates are:
+  - unbiased
+  - consistent
+  - efficient
+- allows researchers to test:
+  - individual parameter significance
+  - overall model fit using chi-square
+
+Problem with ML:
+
+- parameter estimates can still be fairly robust when normality is moderately violated
+- standard errors and chi-square fit tests can become inaccurate
+  - peaked distributions can cause models to be rejected too often
+  - flatter distributions can create the opposite problem
+
+Newer estimation methods were developed to reduce reliance on multivariate normality
+
+- Generalized Least Squares (GLS)
+- Asymptotically Distribution-Free (ADF) methods
+- Weighted Least Squares (WLS)
+- Diagonally Weighted Least Squares (DWLS)
+- elliptical estimation
+
+These more flexible methods also have drawbacks
+
+- can require much larger sample sizes
+- may require more computation
+- ADF methods especially can become difficult with many observed variables
+
+Authors say researchers should choose estimation methods based on:
+
+- how reasonable the normality assumption is
+- sample size
+- model size
+- limitations of the alternative estimation methods
+
+# Confirmatory Measurement Model
+
+## Need for Unidimensional Measurement
+
+- Unidimensionality means that a set of indicators measures one underlying construct.
+- Establishing unidimensional measurement is necessary before assigning a clear theoretical meaning to a latent construct.
+- The authors discuss internal consistency and external consistency as criteria for assessing unidimensionality.
+
+## Specification
+
+## Assessment of Fit
+
+## Respecification
+
+# One-Step Versus Two-Step Modeling Approaches
+
+## The Confirmatory Structural Model
+
+## Recommended Two-Step Modeling Approach
+
+## Advantages of the Two-Step Approach
+
+## Additional Considerations in Structural Model Interpretation
+
+# Conclusion
+
+# References
+
+Anderson, James C., and David W. Gerbing. 1988. “Structural Equation Modeling in Practice: A Review and Recommended Two-Step Approach.” *Psychological Bulletin* 103 (3): 411–423. https://doi.org/10.1037/0033-2909.103.3.411.
+
+# Appendix
