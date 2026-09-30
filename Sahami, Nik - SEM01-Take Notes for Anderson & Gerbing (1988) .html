@@ -2193,7 +2193,11 @@ vertical-align: -.125em;
   <li><a href="#the-confirmatory-structural-model" id="toc-the-confirmatory-structural-model" class="nav-link" data-scroll-target="#the-confirmatory-structural-model"><span class="header-section-number">4.1</span> The Confirmatory Structural Model</a></li>
   <li><a href="#recommended-two-step-modeling-approach" id="toc-recommended-two-step-modeling-approach" class="nav-link" data-scroll-target="#recommended-two-step-modeling-approach"><span class="header-section-number">4.2</span> Recommended Two-Step Modeling Approach</a></li>
   <li><a href="#advantages-of-the-two-step-approach" id="toc-advantages-of-the-two-step-approach" class="nav-link" data-scroll-target="#advantages-of-the-two-step-approach"><span class="header-section-number">4.3</span> Advantages of the Two-Step Approach</a></li>
-  <li><a href="#additional-considerations-in-structural-model-interpretation" id="toc-additional-considerations-in-structural-model-interpretation" class="nav-link" data-scroll-target="#additional-considerations-in-structural-model-interpretation"><span class="header-section-number">4.4</span> Additional Considerations in Structural Model Interpretation</a></li>
+  <li><a href="#additional-considerations-in-structural-model-interpretation" id="toc-additional-considerations-in-structural-model-interpretation" class="nav-link" data-scroll-target="#additional-considerations-in-structural-model-interpretation"><span class="header-section-number">4.4</span> Additional Considerations in Structural Model Interpretation</a>
+  <ul class="collapse">
+  <li><a href="#practical-vs-statistical-significance" id="toc-practical-vs-statistical-significance" class="nav-link" data-scroll-target="#practical-vs-statistical-significance"><span class="header-section-number">4.4.1</span> Practical vs Statistical Significance</a></li>
+  <li><a href="#considerations-in-drawing-causal-inferences" id="toc-considerations-in-drawing-causal-inferences" class="nav-link" data-scroll-target="#considerations-in-drawing-causal-inferences"><span class="header-section-number">4.4.2</span> Considerations in Drawing Causal Inferences</a></li>
+  </ul></li>
   </ul></li>
   <li><a href="#conclusion" id="toc-conclusion" class="nav-link" data-scroll-target="#conclusion"><span class="header-section-number">5</span> Conclusion</a></li>
   <li><a href="#references" id="toc-references" class="nav-link" data-scroll-target="#references"><span class="header-section-number">6</span> References</a></li>
@@ -2336,8 +2340,8 @@ vertical-align: -.125em;
 </ul>
 <p>Authors view ML/GLS and PLS as complementary</p>
 <ul>
-<li>ML or GLS = theory testing and development</li>
-<li>PLS = prediction and application</li>
+<li>ML or GLS - theory testing and development</li>
+<li>PLS - prediction and application</li>
 <li>rest of article focuses on ML/GLS for confirmatory theory testing</li>
 </ul>
 </section>
@@ -2391,41 +2395,372 @@ vertical-align: -.125em;
 </section>
 <section id="confirmatory-measurement-model" class="level1" data-number="3">
 <h1 data-number="3"><span class="header-section-number">3</span> Confirmatory Measurement Model</h1>
+<p>Confirmatory measurement model shows how observed variables relate to underlying constructs</p>
+<ul>
+<li>used to determine whether the constructs are being measured properly</li>
+<li>constructs are allowed to correlate with each other</li>
+<li>this is evaluated before testing the structural relationships</li>
+</ul>
 <section id="need-for-unidimensional-measurement" class="level2" data-number="3.1">
 <h2 data-number="3.1" class="anchored" data-anchor-id="need-for-unidimensional-measurement"><span class="header-section-number">3.1</span> Need for Unidimensional Measurement</h2>
+<p>Unidimensionality means that a set of indicators should measure one underlying construct</p>
 <ul>
-<li>Unidimensionality means that a set of indicators measures one underlying construct.</li>
-<li>Establishing unidimensional measurement is necessary before assigning a clear theoretical meaning to a latent construct.</li>
-<li>The authors discuss internal consistency and external consistency as criteria for assessing unidimensionality.</li>
+<li>necessary before assigning a clear meaning to a latent construct</li>
+<li>assessed using:
+<ul>
+<li>internal consistency</li>
+<li>external consistency</li>
+</ul></li>
+<li>multiple indicators are preferred because they help define constructs more clearly</li>
+<li>indicators that load on multiple constructs can make interpretation difficult</li>
 </ul>
 </section>
 <section id="specification" class="level2" data-number="3.2">
 <h2 data-number="3.2" class="anchored" data-anchor-id="specification"><span class="header-section-number">3.2</span> Specification</h2>
+<p>Specification is the process of deciding how indicators and constructs are represented in the measurement model</p>
+<ul>
+<li>multiple indicators per construct are preferred</li>
+<li>researchers also need to consider:
+<ul>
+<li>how the factor scale is set</li>
+<li>whether any constructs only have one indicator</li>
+<li>whether the sample size is large enough</li>
+</ul></li>
+<li>around 150 observations is often enough for models with 3+ indicators per factor</li>
+</ul>
 </section>
 <section id="assessment-of-fit" class="level2" data-number="3.3">
 <h2 data-number="3.3" class="anchored" data-anchor-id="assessment-of-fit"><span class="header-section-number">3.3</span> Assessment of Fit</h2>
+<p>After estimating the measurement model, researchers evaluate how well it fits the data</p>
+<ul>
+<li>overall fit can be assessed with statistics such as:
+<ul>
+<li>chi-square</li>
+<li>goodness-of-fit index</li>
+<li>root-mean-square residual</li>
+</ul></li>
+<li>convergent validity - indicators should significantly relate to the construct they are supposed to measure</li>
+<li>discriminant validity - different constructs should be meaningfully distinct from each other</li>
+</ul>
 </section>
 <section id="respecification" class="level2" data-number="3.4">
 <h2 data-number="3.4" class="anchored" data-anchor-id="respecification"><span class="header-section-number">3.4</span> Respecification</h2>
+<p>Respecification means modifying the model when the original measurement model does not fit well</p>
+<ul>
+<li>changes should be based on theory and content, not statistics alone</li>
+<li>possible changes:
+<ul>
+<li>move an indicator to another factor</li>
+<li>remove an indicator</li>
+<li>allow an indicator to load on multiple factors</li>
+<li>correlate measurement errors</li>
+</ul></li>
+<li>moving or removing indicators is preferred because it better preserves unidimensionality</li>
+<li>adding cross-loadings or correlated errors can improve fit but may make constructs harder to interpret</li>
+</ul>
 </section>
 </section>
 <section id="one-step-versus-two-step-modeling-approaches" class="level1" data-number="4">
 <h1 data-number="4"><span class="header-section-number">4</span> One-Step Versus Two-Step Modeling Approaches</h1>
 <section id="the-confirmatory-structural-model" class="level2" data-number="4.1">
 <h2 data-number="4.1" class="anchored" data-anchor-id="the-confirmatory-structural-model"><span class="header-section-number">4.1</span> The Confirmatory Structural Model</h2>
+<p>Confirmatory structural model tests the hypothesized relationships among latent constructs</p>
+<ul>
+<li>focuses on how the constructs affect or relate to each other</li>
+<li>differs from the measurement model:
+<ul>
+<li>measurement model - how observed indicators relate to constructs</li>
+<li>structural model - how the constructs relate to each other</li>
+</ul></li>
+<li>2 types of constructs:
+<ul>
+<li>endogenous - the causes are included within the model</li>
+<li>exogenous - the causes are outside the model and are not explained</li>
+</ul></li>
+</ul>
+<p>One-step approach estimates the measurement and structural models at the same time</p>
+<ul>
+<li>can create interpretational confounding when the model is misspecified</li>
+<li>interpretational confounding - the empirical meaning of a latent construct changes depending on how the structural model is specified
+<ul>
+<li>factor loadings may change when different structural models are tested</li>
+<li>could improve overall fit while making the constructs harder to interpret</li>
+</ul></li>
+<li>this can make it unclear whether poor fit comes from:
+<ul>
+<li>bad measurement</li>
+<li>incorrect structural relationships</li>
+</ul></li>
+</ul>
+<p>Estimating the measurement model first helps reduce interpretational confounding</p>
+<ul>
+<li>no structural restrictions are imposed while the constructs are first being evaluated</li>
+<li>once acceptable unidimensional measurement is established, factor loadings should not change much when different structural models are tested</li>
+<li>helps preserve the intended meaning of the constructs</li>
+</ul>
 </section>
 <section id="recommended-two-step-modeling-approach" class="level2" data-number="4.2">
 <h2 data-number="4.2" class="anchored" data-anchor-id="recommended-two-step-modeling-approach"><span class="header-section-number">4.2</span> Recommended Two-Step Modeling Approach</h2>
+<p>Two-step approach evaluates measurement before testing the structural relationships</p>
+<ol type="1">
+<li>evaluate the measurement model
+<ul>
+<li>determine whether observed indicators properly measure their constructs</li>
+<li>establish acceptable:
+<ul>
+<li>unidimensionality</li>
+<li>convergent validity</li>
+<li>discriminant validity</li>
+<li>overall model fit</li>
+</ul></li>
+<li>respecify measurement problems before moving forward</li>
+</ul></li>
+<li>evaluate the structural model
+<ul>
+<li>test the theoretical relationships among the constructs</li>
+<li>assess whether the proposed structural model fits</li>
+<li>contributes to assessment of nomological validity</li>
+</ul></li>
+</ol>
+<p>Authors recommend comparing a series of nested structural models</p>
+<ul>
+<li>nested model - a more restricted version of another model
+<ul>
+<li>one or more freely estimated parameters are constrained</li>
+<li>usually fixed at zero</li>
+</ul></li>
+</ul>
+<p>5 models are used:</p>
+<ul>
+<li>Mn = null structural model
+<ul>
+<li>all relationships among constructs are fixed at zero</li>
+<li>most restricted model</li>
+</ul></li>
+<li>Mc = constrained alternative model
+<ul>
+<li>one or more paths estimated in the theoretical model are constrained</li>
+<li>represents a simpler theoretical alternative</li>
+</ul></li>
+<li>Mt = theoretical model
+<ul>
+<li>the researcher’s main proposed model</li>
+</ul></li>
+<li>Mu = unconstrained alternative model
+<ul>
+<li>one or more paths restricted in Mt are freely estimated</li>
+<li>represents a more complex theoretical alternative</li>
+</ul></li>
+<li>Ms = saturated model
+<ul>
+<li>all possible relationships among constructs are estimated</li>
+<li>least restricted model</li>
+<li>equivalent to the final measurement model</li>
+</ul></li>
+</ul>
+<p>models are ordered:</p>
+<p>Mn &lt; Mc &lt; Mt &lt; Mu &lt; Ms</p>
+<p>Pseudo chi-square test is used first to determine whether any structural model could provide acceptable fit</p>
+<ul>
+<li>uses information from the saturated measurement model and null structural model</li>
+<li>if the test indicates no structural model could fit adequately:
+<ul>
+<li>suggests there may still be a fundamental problem with the measurement model</li>
+<li>measurement model should be reconsidered before continuing</li>
+</ul></li>
+<li>a one-step approach would make this problem harder to identify</li>
+</ul>
+<p>Sequential Chi-Square Difference Tests (SCDTs) compare nested structural models</p>
+<ul>
+<li>determine whether one model explains the construct relationships significantly better than another</li>
+<li>compare more constrained and less constrained models</li>
+<li>if the added paths do not significantly improve the model:
+<ul>
+<li>prefer the more constrained / simpler model</li>
+</ul></li>
+<li>if the added paths significantly improve explanation:
+<ul>
+<li>the more complex model may be necessary</li>
+</ul></li>
+<li>allows the theoretical model to be compared against realistic alternative explanations</li>
+</ul>
+<p>Comparing Mt with Ms helps assess nomological validity</p>
+<ul>
+<li>asks whether the proposed theoretical relationships adequately explain the relationships among the constructs</li>
+<li>measurement model acts as the baseline for comparison</li>
+</ul>
+<p>Two-step approach also emphasizes degrees of freedom and strength of theoretical explanation</p>
+<ul>
+<li>a model with every possible path estimated may fit well
+<ul>
+<li>but provides very little ability to make meaningful theoretical or causal claims</li>
+</ul></li>
+<li>theory becomes more informative when it successfully predicts that some paths should not exist</li>
+</ul>
 </section>
 <section id="advantages-of-the-two-step-approach" class="level2" data-number="4.3">
 <h2 data-number="4.3" class="anchored" data-anchor-id="advantages-of-the-two-step-approach"><span class="header-section-number">4.3</span> Advantages of the Two-Step Approach</h2>
+<p>Two-step approach makes it easier to determine where poor model fit is coming from</p>
+<ul>
+<li>measurement model is evaluated first</li>
+<li>structural model is evaluated only after acceptable measurement is established</li>
+<li>helps separate:
+<ul>
+<li>measurement problems</li>
+<li>theoretical / structural problems</li>
+</ul></li>
+</ul>
+<p>Reduces interpretational confounding</p>
+<ul>
+<li>constructs are defined before structural relationships are imposed</li>
+<li>reduces the chance that changing structural paths changes the meaning of the constructs</li>
+</ul>
+<p>Prevents good fit in one part of the model from hiding poor fit in another</p>
+<ul>
+<li>one-step approach evaluates measurement and structural components together</li>
+<li>strong fit in one part can potentially compensate for weak fit in the other</li>
+<li>separate evaluation makes problems easier to detect</li>
+</ul>
+<p>Allows formal comparisons between competing theoretical models</p>
+<ul>
+<li>researcher does not only ask whether Mt fits</li>
+<li>compares Mt with:
+<ul>
+<li>a more constrained alternative</li>
+<li>a less constrained alternative</li>
+<li>the saturated measurement model</li>
+</ul></li>
+<li>helps test rival explanations rather than assuming the original theory is correct</li>
+</ul>
+<p>Encourages parsimony</p>
+<ul>
+<li>more complex models usually fit better because more paths are estimated</li>
+<li>extra paths should only be included if they meaningfully improve explanation</li>
+<li>if 2 models explain the data similarly:
+<ul>
+<li>prefer the simpler model</li>
+</ul></li>
+</ul>
+<p>Absent paths can also provide theoretical information</p>
+<ul>
+<li>support for a path being fixed at zero can support the theory</li>
+<li>theory includes both:
+<ul>
+<li>relationships that should exist</li>
+<li>relationships that should not exist</li>
+</ul></li>
+</ul>
+<p>Highlights the tradeoff between model fit and strength of causal inference</p>
+<ul>
+<li>adding more paths can improve fit</li>
+<li>adding too many paths weakens the ability to make meaningful causal or theoretical claims</li>
+<li>a highly flexible model may fit well but provide little theoretical explanation</li>
+</ul>
+<p>Other advantages summarized by the authors:</p>
+<ul>
+<li>allows significance testing of all factor loadings</li>
+<li>can determine whether any structural model would provide acceptable fit</li>
+<li>allows an independent test of the proposed theoretical model</li>
+<li>provides a framework for comparing the theoretical model with likely alternatives</li>
+</ul>
 </section>
 <section id="additional-considerations-in-structural-model-interpretation" class="level2" data-number="4.4">
 <h2 data-number="4.4" class="anchored" data-anchor-id="additional-considerations-in-structural-model-interpretation"><span class="header-section-number">4.4</span> Additional Considerations in Structural Model Interpretation</h2>
+<section id="practical-vs-statistical-significance" class="level3" data-number="4.4.1">
+<h3 data-number="4.4.1" class="anchored" data-anchor-id="practical-vs-statistical-significance"><span class="header-section-number">4.4.1</span> Practical vs Statistical Significance</h3>
+<p>Statistical significance does not always mean a difference is practically important</p>
+<ul>
+<li>chi-square statistics are affected by sample size</li>
+<li>with large samples:
+<ul>
+<li>very small differences can become statistically significant</li>
+<li>two models may be statistically different even if the practical difference is minor</li>
+</ul></li>
+</ul>
+<p>Normed Fit Index (NFI) can be used with statistical tests</p>
+<ul>
+<li>ranges from 0 to 1</li>
+<li>represents how much observed covariance is explained compared with a null model</li>
+<li>helps determine whether differences between models are practically meaningful</li>
+</ul>
+<p>Researchers may sometimes prefer a simpler model even if a more complex model is statistically better</p>
+<ul>
+<li>if the improvement in fit is very small</li>
+<li>simpler model may still provide an adequate explanation</li>
+<li>again emphasizes parsimony</li>
+</ul>
+</section>
+<section id="considerations-in-drawing-causal-inferences" class="level3" data-number="4.4.2">
+<h3 data-number="4.4.2" class="anchored" data-anchor-id="considerations-in-drawing-causal-inferences"><span class="header-section-number">4.4.2</span> Considerations in Drawing Causal Inferences</h3>
+<p>Good model fit does not prove that a theory is true</p>
+<ul>
+<li>models are not confirmed by data</li>
+<li>they gain support when the data fails to disconfirm them</li>
+<li>other models may fit equally well</li>
+</ul>
+<p>Temporal order does not automatically prove causation</p>
+<ul>
+<li>one variable occurring before another does not mean it caused it</li>
+<li>correlation and timing alone are not enough</li>
+</ul>
+<p>Naming a latent construct does not mean it is perfectly understood</p>
+<ul>
+<li>observed indicators may not perfectly represent the construct because of:
+<ul>
+<li>invalidity - indicator measures something other than what was intended</li>
+<li>unreliability - part of the observed value comes from random measurement error</li>
+</ul></li>
+</ul>
+<p>Respecification reduces the strength of causal conclusions</p>
+<ul>
+<li>modifying a model based on the same data makes the process increasingly exploratory</li>
+<li>strong confirmatory claims become harder to justify</li>
+</ul>
+<p>Cross-validation would ideally be used</p>
+<ul>
+<li>develop the model using one sample</li>
+<li>validate it using a separate sample</li>
+<li>often difficult because SEM already requires fairly large samples</li>
+</ul>
+<p>Most causal interpretations from SEM should therefore be qualified</p>
+<ul>
+<li>acceptable fit provides support for a proposed explanation</li>
+<li>it does not prove causality</li>
+</ul>
+</section>
 </section>
 </section>
 <section id="conclusion" class="level1" data-number="5">
 <h1 data-number="5"><span class="header-section-number">5</span> Conclusion</h1>
+<p>Anderson and Gerbing argue that SEM should generally use a two-step approach instead of estimating the measurement and structural models at the same time</p>
+<ol type="1">
+<li>evaluate the measurement model</li>
+</ol>
+<ul>
+<li>make sure indicators adequately measure their intended constructs</li>
+<li>establish unidimensionality, convergent validity, and discriminant validity</li>
+</ul>
+<ol start="2" type="1">
+<li>evaluate the structural model</li>
+</ol>
+<ul>
+<li>test the hypothesized relationships among the constructs</li>
+<li>assess nomological validity</li>
+</ul>
+<p>The main advantage of the two-step approach is that it separates measurement problems from structural problems</p>
+<ul>
+<li>reduces interpretational confounding</li>
+<li>prevents good fit in one part of the model from hiding poor fit in another</li>
+<li>allows researchers to compare the proposed theory with plausible alternative models</li>
+<li>supports more meaningful interpretation of constructs and relationships</li>
+</ul>
+<p>SEM can be very useful for theory testing and construct validation when used carefully</p>
+<ul>
+<li>researchers should not rely only on statistical fit</li>
+<li>model respecification should be supported by theory</li>
+<li>good model fit does not prove causality</li>
+<li>causal conclusions should usually remain qualified</li>
+</ul>
 </section>
 <section id="references" class="level1" data-number="6">
 <h1 data-number="6"><span class="header-section-number">6</span> References</h1>
