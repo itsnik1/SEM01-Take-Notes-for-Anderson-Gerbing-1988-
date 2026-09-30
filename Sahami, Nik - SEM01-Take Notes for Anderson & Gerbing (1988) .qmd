@@ -435,4 +435,4 @@ Anderson, James C., and David W. Gerbing. 1988. “Structural Equation Modeling 
 
 [GitHub Repo Link](https://github.com/itsnik1/SEM01-Take-Notes-for-Anderson-Gerbing-1988-)
 
-gh Pages Published Link
+[gh Pages Published Link](https://itsnik1.github.io/SEM01-Take-Notes-for-Anderson-Gerbing-1988-/)
