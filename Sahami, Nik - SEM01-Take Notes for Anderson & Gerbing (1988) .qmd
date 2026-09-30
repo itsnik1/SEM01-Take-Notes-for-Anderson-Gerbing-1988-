@@ -15,8 +15,8 @@ Structural Equation Modeling (SEM) is used to test theories about constructs and
 
 - useful for theory testing and development
 - model-building can be separated into 2 parts:
-  1. measurement model - how observed measures relate to underlying constructs
-  2. structural model - how the constructs relate to each other
+  1.  measurement model - how observed measures relate to underlying constructs
+  2.  structural model - how the constructs relate to each other
 - both parts can technically be estimated at the same time
   - authors argue the measurement model should be evaluated first
   - then the measurement and structural models can be evaluated together
@@ -153,7 +153,7 @@ Specification is the process of deciding how indicators and constructs are repre
   - how the factor scale is set
   - whether any constructs only have one indicator
   - whether the sample size is large enough
-- around 150 observations is often enough for models with 3+ indicators per factor
+- around 150 observations is usually enough for models with 3+ indicators per factor
 
 ## Assessment of Fit
 
@@ -163,6 +163,7 @@ After estimating the measurement model, researchers evaluate how well it fits th
   - chi-square
   - goodness-of-fit index
   - root-mean-square residual
+  - normed and nonnormed fit indices
 - convergent validity - indicators should significantly relate to the construct they are supposed to measure
 - discriminant validity - different constructs should be meaningfully distinct from each other
 
@@ -213,19 +214,18 @@ Estimating the measurement model first helps reduce interpretational confounding
 
 Two-step approach evaluates measurement before testing the structural relationships
 
-1. evaluate the measurement model
-   - determine whether observed indicators properly measure their constructs
-   - establish acceptable:
-     - unidimensionality
-     - convergent validity
-     - discriminant validity
-     - overall model fit
-   - respecify measurement problems before moving forward
-
-2. evaluate the structural model
-   - test the theoretical relationships among the constructs
-   - assess whether the proposed structural model fits
-   - contributes to assessment of nomological validity
+1.  evaluate the measurement model
+    - determine whether observed indicators properly measure their constructs
+    - establish acceptable:
+      - unidimensionality
+      - convergent validity
+      - discriminant validity
+      - overall model fit
+    - respecify measurement problems before moving forward
+2.  evaluate the structural model
+    - test the theoretical relationships among the constructs
+    - assess whether the proposed structural model fits
+    - contributes to assessment of nomological validity
 
 Authors recommend comparing a series of nested structural models
 
@@ -253,7 +253,7 @@ Authors recommend comparing a series of nested structural models
 
 models are ordered:
 
-Mn < Mc < Mt < Mu < Ms
+Mn \< Mc \< Mt \< Mu \< Ms
 
 Pseudo chi-square test is used first to determine whether any structural model could provide acceptable fit
 
@@ -403,12 +403,15 @@ Most causal interpretations from SEM should therefore be qualified
 
 Anderson and Gerbing argue that SEM should generally use a two-step approach instead of estimating the measurement and structural models at the same time
 
-1. evaluate the measurement model
-  - make sure indicators adequately measure their intended constructs
-  - establish unidimensionality, convergent validity, and discriminant validity
-2. evaluate the structural model
-  - test the hypothesized relationships among the constructs
-  - assess nomological validity
+1.  evaluate the measurement model
+
+- make sure indicators adequately measure their intended constructs
+- establish unidimensionality, convergent validity, and discriminant validity
+
+2.  evaluate the structural model
+
+- test the hypothesized relationships among the constructs
+- assess nomological validity
 
 The main advantage of the two-step approach is that it separates measurement problems from structural problems
 
@@ -429,3 +432,7 @@ SEM can be very useful for theory testing and construct validation when used car
 Anderson, James C., and David W. Gerbing. 1988. “Structural Equation Modeling in Practice: A Review and Recommended Two-Step Approach.” *Psychological Bulletin* 103 (3): 411–423. https://doi.org/10.1037/0033-2909.103.3.411.
 
 # Appendix
+
+[GitHub Repo Link](https://github.com/itsnik1/SEM01-Take-Notes-for-Anderson-Gerbing-1988-)
+
+gh Pages Published Link
